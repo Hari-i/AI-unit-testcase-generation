@@ -1,0 +1,8 @@
+{"code": "def add(a, b):\n    return a + b", "test_list": ["assert add(1, 2) == 3", "assert add(0, 0) == 0"]}
+{"code": "def add(a, b):\n    return a + b", "test_list": ["assert add(2, 3) == 5", "assert add(-1, 1) == 0"]}
+{"code": "def add(a, b):\n    return a + b", "test_list": ["assert add(10, 5) == 15"]}
+{"code": "def add(a, b):\n    return a + b", "test_list": ["assert add(4, 6) == 10"]}
+{"code": "def add(a, b):\n    return a + b", "test_list": ["assert add(3, 7) == 10"]}
+{"code": "def add(a, b):\n    return a + b", "test_list": ["assert add(1, 9) == 10"]}
+{"code": "def add(a, b):\n    return a + b", "test_list": ["assert add(8, 2) == 10"]}
+{"code": "def add(a, b):\n    return a + b", "test_list": ["assert add(5, 5) == 10"]}
