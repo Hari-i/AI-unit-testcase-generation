@@ -1,6 +1,6 @@
-# trainer.py: Script to fine-tune the model
+# trainer.py
 
-from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments, DataCollatorForSeq2Seq
+from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments, DataCollatorForSeq2Seq, RobertaTokenizer
 import config
 import data_loader
 import model
