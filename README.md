@@ -1,20 +1,20 @@
-# 🤖 AI Unit Test Case Generator
+# AI Unit Test Case Generator
 
 An intelligent system that automatically generates unit test cases for Python functions using CodeT5 and the MBPP dataset.
 
-## 🎯 Overview
+## Overview
 
 This project uses a fine-tuned CodeT5 model to learn the mapping from Python function code to corresponding unit test cases. The model is trained on the MBPP (Mostly Basic Python Problems) dataset, which contains Python functions along with their test cases.
 
-## ✨ Features
+## Features
 
-- **🧠 CodeT5-based**: Uses Salesforce's CodeT5-small model for code-to-text generation
-- **📚 MBPP Dataset**: Trained on comprehensive Python function examples with AST validation
-- **⚡ Automatic Generation**: Generates unit tests for user-provided Python functions
-- **🔧 Robust Processing**: Includes syntax validation and function metadata extraction
-- **🎮 Easy Interface**: Simple command-line interface for test generation
+- **CodeT5-based**: Uses Salesforce's CodeT5-small model for code-to-text generation
+- **MBPP Dataset**: Trained on comprehensive Python function examples with AST validation
+- **Automatic Generation**: Generates unit tests for user-provided Python functions
+- **Robust Processing**: Includes syntax validation and function metadata extraction
+- **Command-Line Interface**: Simple CLI for test generation
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Train the model** (if not already trained):
 
@@ -69,26 +69,26 @@ assert add_numbers(0, 0) == 0
 assert add_numbers(-1, 1) == 0
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 AI unit testcase generation/
-├── main.py                # 🎮 Main demo script
-├── requirements.txt       # 📦 Dependencies
-├── README.md             # 📖 Documentation
-├── src/                   # 🔧 Core source code
-│   ├── config.py         # ⚙️ Configuration
-│   ├── data_loader.py    # 📊 Data processing
-│   ├── model.py          # 🧠 Model setup
-│   ├── trainer.py        # 🏋️ Training pipeline
-│   ├── generator.py      # 🎯 Test generation
-│   └── utils.py          # 🛠️ Utilities
-├── data/                  # 📚 Dataset
-│   └── mbpp.jsonl        # 🐍 MBPP dataset
-└── trained_model/         # 🤖 Trained model
-    ├── model.safetensors # 🧠 Model weights
-    ├── config.json       # ⚙️ Model config
-    └── ...               # 🔧 Other model files
+├── main.py                # Main entry script
+├── requirements.txt       # Dependencies
+├── README.md              # Documentation
+├── src/                   # Core source code
+│   ├── config.py          # Configuration
+│   ├── data_loader.py     # Data processing
+│   ├── model.py           # Model setup
+│   ├── trainer.py         # Training pipeline
+│   ├── generator.py       # Test generation
+│   └── utils.py           # Utilities
+├── data/                  # Dataset
+│   └── mbpp.jsonl         # MBPP dataset
+└── trained_model/         # Trained model
+    ├── model.safetensors  # Model weights
+    ├── config.json        # Model configuration
+    └── ...                # Other model files
 ```
 
 ## Configuration
