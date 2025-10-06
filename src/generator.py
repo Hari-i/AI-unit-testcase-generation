@@ -26,15 +26,12 @@ def generate_tests(function_code):
 
     # Prepare input text with a guiding instruction
     input_text = config.PROMPT_PREFIX + function_code + "\nUse scalar inputs for tests (e.g., multiply(2, 3))."
-    print("Input text:", input_text)
 
     # Generate using pipeline
     generator = pipeline('text2text-generation', model=ml_model, tokenizer=tokenizer)
     generated = generator(input_text, max_length=config.MAX_OUTPUT_LENGTH, num_beams=config.NUM_BEAMS, no_repeat_ngram_size=2)[0]['generated_text']
-    print("Generator config:", generator.model.config)
-    print("Raw generated text:", generated)
 
-    # Post-process
+    # Post-process and return clean test cases
     return utils.postprocess_generated_text(generated)
 
 def main():
